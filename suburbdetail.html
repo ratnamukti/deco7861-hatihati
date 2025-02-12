@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title id="title-name">Crime Map</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+</head>
+<body>
+    
+    <div class="header">
+        <div class="left-container">
+            <img class="flag" alt="" src="./img/crime_type_icon/flagsolid-9.svg">
+        <h1 id="suburb-name" value=""></h1>
+        </div>
+        <div class="right-container">
+            <a href="crime_map.html">
+                <img src="./img/back-to-map.svg" id="back-button" alt="back-button">
+            </a>
+            <a href="./recall_cahtbot.html"><img src="./img/message.svg" alt="chatbot-toggle"></a>  
+        </div>
+              
+    </div>
+    <!-- Main body of crime cards and safety strategies -->
+    <div class="main-container">
+        <!-- Container of 2 rows x 5 columns crime type cards -->
+        <div id="offences-container">
+            <div class="crime-type-logo-placer-1">
+                <div class="icon-1"></div>
+                <div class="crime-name"></div>
+            </div>
+            <div class="crime-type-logo-placer-2">
+                <div class="icon-2"></div>
+                <div class="crime-name"></div>
+            </div>
+            <div class="crime-type-logo-placer-3">
+                <div class="icon-3"></div>
+                <div class="crime-name"></div>
+            </div>
+            <div class="crime-type-logo-placer-4">
+                <div class="icon-4"></div>
+                <div class="crime-name"></div>
+            </div>
+            <div class="crime-type-logo-placer-5">
+                <div class="icon-5"></div>
+                <div class="crime-name"></div>
+            </div>
+            <div class="crime-type-logo-placer-6">
+                    <div class="icon-6"></div>
+            <div class="crime-name"></div>
+            </div>
+            <div class="crime-type-logo-placer-7">
+                <div class="icon-7"></div>
+            <div class="crime-name"></div>
+            </div>
+            <div class="crime-type-logo-placer-8">
+                <div class="icon-8"></div>
+                <div class="crime-name"></div>
+            </div>
+            <div class="crime-type-logo-placer-9">
+                <div class="icon-9"></div>
+                <div class="crime-name"></div>
+            </div>
+            <div class="crime-type-logo-placer-10">
+                <div class="icon-10"></div>
+                <div class="crime-name"></div>
+            </div>
+        </div>
+        <div style="font-size: 60px">Safety Strategies</div>
+        <div class="safety-container">
+            <!-- Container of 2 rows x 3 columns safety strategies cards -->
+            <div class="safety-placer-1">
+                <a href="Self Defence Tutorials.html">
+                    <img class="safety-icon-1" alt="" src="./img/safety/image 67.png">
+                </a>
+                <div class="safety-text">Self Defence<br>Tutorials</div>
+            </div>
+        
+            <div class="safety-placer-2">
+                <a href="Going Out.html">
+                    <img class="safety-icon-2" alt="" src="./img/safety/image 68.png">
+                </a>
+                <div class="safety-text">Going Out?</div>
+            </div>
+        
+            <div class="safety-placer-3">
+                <a href="emergency.html">
+                    <img class="safety-icon-3" alt="" src="./img/safety/image 69.png">
+                </a>
+                <div class="safety-text">What to do in an<br>EMERGENCY</div>
+            </div>
+        
+            <div class="safety-placer-4">
+                <a href="Signs_of_Danger.html">
+                    <img class="safety-icon-4" alt="" src="./img/safety/image 70.png">
+                </a>
+                <div class="safety-text">Sign of Danger</div>
+            </div>
+        
+            <div class="safety-placer-5">
+                <a href="Reporting Strange Behaviour.html">
+                    <img class="safety-icon-5" alt="" src="./img/safety/image 71.png">
+                </a>
+                <div class="safety-text">Reporting Strange<br>Behaviour</div>
+            </div>
+        
+            <div class="safety-placer-6">
+                <a href="Reaching Out.html">
+                    <img class="safety-icon-6" alt="" src="./img/safety/image 72.png">
+                </a>
+                <div class="safety-text">Reaching Out</div>
+            </div>
+        </div>
+    </div>
+    <!-- Popup element when user clice selectable elements -->
+    <div id="popup-banner" class="crime-details-popup">
+        <div class="popup-content" id="detail-popup">
+            <!-- Header contains crime type icon and name -->
+            <div class="header-content">
+                <div id="popImage"></div>
+                <h1 class="detail-title popup-title" id="popup-title" style="color:rgb(0, 0, 0);">
+                    Suburb Name
+                </h1>
+                <h1 class="popup-title">
+                </h1>
+            </div>  
+            <div>
+                <p id="popup-subtitle" style="color:rgb(0, 0, 0);"></p>
+            </div>
+            <button id="closePopup">
+                Close
+            </button>      
+               <!-- Container fills monthly data -->
+            <div class="data-container"> 
+                <div id="crime-number"> </div>
+                <div id="top-offences-container"></div>
+            </div>     
+        </div>
+    </div>
+    <script src="./js/all_crime.js"></script>
+</body>
+</html>
+

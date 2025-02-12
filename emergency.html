@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Strategies</title>
+    <link rel="stylesheet" href="./style/safety.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Safety Strategies</h1>
+        <div class="right-container">
+            <a href="crime_map.html">
+                <img src="./img/back-to-map.svg" id="back-button" alt="back-button">
+            </a>
+            <a href="./recall_cahtbot.html"><img src="./img/message.svg" alt="chatbot-toggle"></a>   
+        </div>     
+    </div>
+    <div class="container">
+        <div class="subheading">
+            <h2>What to do in an EMERGENCY</h2>
+            <button id="backButton">Go Back</button>
+        </div>
+        
+        <ul>
+            <a href="https://www.nationalsecurity.gov.au/what-can-i-do/what-to-do-in-an-attack" target="_blank"><li>What to do in an Attack</li></a>
+            <a href="https://www.sydney.edu.au/about-us/campuses/emergencies-and-personal-safety.html" target="_blank"><li>Emergency and Personal Safety</li></a>
+            <a href="https://www.figma.com/exit?url=https%3A%2F%2Fwww.studymelbourne.vic.gov.au%2Fliving-here%2Fhealth-safety-and-wellbeing%2Fwhat-to-do-in-an-emergency%23%3A~%3Atext%3DWhen%2520you%2520dial%2520000%252C%2520first%2Cof%2520your%2520language%2520in%2520English." target="_blank"><li>What to do in an Emergency</li></a>
+            <a href="https://www.figma.com/exit?url=https%3A%2F%2Fonlinefirstaid.com%2Ffirst-aid-stabbings-victim%2F" target="_blank"><li>First Aid Following a Stabbing </li></a>
+            <a href="https://www.youtube.com/watch?v=f2_oj5toBlI" target="_blank"><li>Basic First Aid Training</li></a>
+            <a href="https://www.figma.com/exit?url=https%3A%2F%2Flibertymissouri.gov%2F2594%2FRobbery-Prevention-Tips" target="_blank"><li>Robbery Prevention Tips</li></a>
+            <a href="https://dps.usc.edu/safety-tips/suspicious-activity/robbery/" target="_blank"><li>What to do in a Robbery</li></a>
+            <a href="chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/https://www.police.qld.gov.au/sites/default/files/2019-11/What%20to%20do%20in%20a%20crash.pdf" target="_blank"><li>What to do in a Traffic Crash</li></a>
+        </ul>
+    </div>
+    <script>
+        // Add an event listener to the element with the ID "backButton"
+        document.getElementById("backButton").addEventListener("click", function() {
+            // When the "backButton" is clicked, navigate back in the browser history
+            window.history.back();
+        });
+    </script>
+</body>
+</html>

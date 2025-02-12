@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Strategies</title>
+    <link rel="stylesheet" href="./style/safety.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Safety Strategies</h1>
+        <div class="right-container">
+            <a href="crime_map.html">
+                <img src="./img/back-to-map.svg" id="back-button" alt="back-button">
+            </a>
+            <a href="./recall_cahtbot.html"><img src="./img/message.svg" alt="chatbot-toggle"></a>   
+        </div>     
+    </div>
+    <div class="container">
+        <div class="subheading">
+            <h2>Signs of Danger</h2>
+            <button id="backButton">Go Back</button>
+        </div>
+        
+        <ul>
+            <a href="https://www.tessacs.org/ask-for-help/danger-signs/" target="_blank"><li>Danger Signs</li></a>
+            <a href="https://psychcentral.com/pro/exhausted-woman/2019/03/9-patterns-of-a-dangerous-person#1" target="_blank"><li>9 Patters of a Dangerous Person</li></a>
+            <a href="https://fsutoolkit.csw.fsu.edu/module/one/how-you-can-avoid-dangerous-situations/" target="_blank"><li>How you can Avoid Dangerous Situations</li></a>
+            <a href="https://www.youtube.com/watch?v=FRSDSa77r3w" target="_blank"><li>SIMPLE Prevention tips to AVOID dangerous situations as a WOMAN!</li></a>
+            <a href="https://www.youtube.com/watch?v=aahafV150v4" target="_blank"><li>What to Do If You Feel Like You're Being Followed</li></a>
+            <a href="https://www.proloneworkers.co.uk/training/video/recognising-warning-signs" target="_blank"><li>Recognising Danger Signs</li></a>
+            <a href="https://www.who.int/news-room/fact-sheets/detail/mental-disorders/?gclid=CjwKCAjw7c2pBhAZEiwA88pOF9pkjzcxw2rO7k5YzXt6Pu6ecvtvTFXIOjNL0VxETo9bKm78dN8EOBoC-58QAvD_BwE" target="_blank"><li>Mental Disorders</li></a>
+            <a href="https://www.apa.org/topics/physical-abuse-violence/youth-warning-signs" target="_blank"><li>Warning Signs of Youth Violence</li></a>
+        </ul>
+    </div>
+    <script>
+        // Add an event listener to the element with the ID "backButton"
+        document.getElementById("backButton").addEventListener("click", function() {
+            // When the "backButton" is clicked, navigate back in the browser history
+            window.history.back();
+        });
+    </script>
+</body>
+</html>

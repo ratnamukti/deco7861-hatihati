@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Strategies</title>
+    <link rel="stylesheet" href="./style/safety.css">
+</head>
+<body>
+    
+    <div class="header">
+        <h1>Safety Strategies</h1>
+        <div class="right-container">
+            <a href="crime_map.html">
+                <img src="./img/back-to-map.svg" id="back-button" alt="back-button">
+            </a>
+            <a href="./recall_cahtbot.html"><img src="./img/message.svg" alt="chatbot-toggle"></a>   
+        </div>     
+    </div>
+    <div class="container">
+        <div class="subheading">
+            <h2>Reaching Out</h2>
+            <button id="backButton">Go Back</button>
+        </div>
+        
+        <ul>
+            <a href="https://www.healthdirect.gov.au/sexual-assault-and-rape#:~:text=This%20might%20be%20a%20police,feel%20ashamed%20or%20to%20blame." target="_blank"><li>Sexual Assault</li></a>
+            <a href="https://au.reachout.com/articles/sexual-assault-support-services" target="_blank"><li>Sexual Assault Support Services</li></a>
+            <a href="https://www.qld.gov.au/community/getting-support-health-social-issue/support-victims-abuse/sexual-abuse-assault/sexual-abuse-assault-getting-help" target="_blank"><li>Sexual Abuse and Assault - Getting Help</li></a>
+            <a href="https://louisville-police.org/407/What-To-Do-If-You-Are-Attacked" target="_blank"><li>What to do if you are Attacked</li></a>
+            <a href="https://www.healthdirect.gov.au/domestic-violence-and-abusive-relationships" target="_blank"><li>Domestic Violence and Abusive Relationships</li></a>
+            <a href="https://www.whiteribbon.org.au/helplines/" target="_blank"><li>Numbers to call for Help</li></a>
+            <a href="https://www.worldbank.org/en/work-with-us/hsd/home/signal_for_help" target="_blank"><li>Health and Safety Directorate - Help Signals</li></a>
+            <a href="https://www.iffoundation.org.au/how-to-get-out-of-a-dangerous-situation/" target="_blank"><li>How to get out of a Dangerous Situation</li></a>
+        </ul>
+    </div>
+    <script>
+        // Add an event listener to the element with the ID "backButton"
+        document.getElementById("backButton").addEventListener("click", function() {
+            // When the "backButton" is clicked, navigate back in the browser history
+            window.history.back();
+        });
+    </script>
+</body>
+</html>

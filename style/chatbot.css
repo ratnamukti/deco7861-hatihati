@@ -1,0 +1,255 @@
+
+html * {
+  font-family: Roboto;
+}
+body {
+  display: flex;
+  line-height: normal;
+  background-color:#fce2eb;
+}
+
+
+:root {
+  --font-inter: Inter;
+  --font-size-xl: 20px;
+  --color-white: #fff;
+  --color-lavenderblush: #fce2eb;
+  --color-black: #000;
+  --color-gray: #272727;
+  --color-hotpink: #eb4181;
+  --color-palevioletred: #a32e5a;
+  --br-mini: 15px;
+}
+
+
+@media screen and (max-width: 1200px) {
+  :root {
+    --font-size-xl: 16px;
+
+  }
+
+  .chatbot-welcome-child {
+    height: auto;
+  }
+
+  .hatihati-title {
+    font-size: 48px;
+  }
+
+  .chatbot-icon {
+    display: none;
+    top: 0;
+  }
+
+  .message-container {
+    margin-top: 10px;
+    margin-right: 20px;
+    width: 100%;
+  }
+
+  .message-container-right {
+    margin-top: 40px;
+    margin-left: 10px;
+  }
+}
+
+.chatbot-body strong {
+  color: #A32E5A;
+}
+
+/* Main body of chatbot */
+.chatbot-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  margin-top: 200px; 
+  width: 100%;
+  height: auto;
+  font-size: var(--font-size-xl); 
+  color: var(--color-black); 
+  font-family: var(--font-inter); 
+}
+
+.chatbot-welcome-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-lavenderblush); 
+  width: 100%; 
+  height: 100%; 
+}
+
+/* "Hatihati" title */
+.hatihati-title {
+  position: absolute;
+  top: 5px;
+  left: -16px;
+  font-size: 96px;
+  letter-spacing: -1.5px;
+  display: inline-block;
+  color: var(--color-palevioletred); 
+  text-align: center;
+  width: 556px;
+  height: 142px;
+  z-index: 999;
+  font-family: Roboto;
+}
+
+/* Style for the welcome message */
+.welcome-message {
+  font-family: var(--font-inter); 
+  color: var(--color-palevioletred); 
+  margin: 0;
+}
+
+.chat-message {
+  margin: 0;
+}
+
+/* Style for the message container contains icon and wrapper*/
+.message-container {
+  position: relative;
+  margin-top: 20px; 
+  margin-right: 600px; 
+  width: 50%;
+  height: auto;
+  display: flex; 
+  align-items: center; 
+  margin-top: 50px;
+}
+
+/* Style for the content wrapper contains text*/
+.content-wrapper {
+  position: absolute;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  right: 0;
+  bottom: 0;
+  left: 14.55%;
+  border-radius: var(--br-mini); 
+  background-color: #ffffff;
+  border: 1px solid var(--color-hotpink); 
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0 5px;
+}
+
+/* Style for chatbot buttons */
+.button {
+  width: 582px;
+  height: 71px;
+  border-radius: 15px;
+  border: 1px solid #EB4181;
+  background: #272727;
+  color: #ffffff; 
+  text-align: center; 
+  line-height: 71px; 
+  cursor: pointer;  
+  margin: 15px;
+  margin-top: 25px;
+  margin-right: 600px; /* Adjust margin for positioning */
+}
+
+/* Style for the right-aligned message container 
+  Where echo user's choice*/
+.message-container-right {
+  position: relative;
+  margin-top: 60px;
+  margin-left: 1300px; 
+  width: 50%;
+  height: auto;
+  right: 0;
+}
+
+
+/* Popup styles */
+
+/* Style for the popup container */
+.popup-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+/* Style for the popup title */
+.popup-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+/* A form to collect user's information */
+
+/* Style for a group of form input elements */
+.input-group {
+  margin-bottom: 15px; 
+}
+
+/* Style for labels associated with form inputs */
+.input-label {
+  display: block; 
+  margin-bottom: 5px; /
+}
+
+/* Common style for text, telephone, and textarea inputs */
+.input-text,
+.input-tel,
+.input-textarea {
+  width: 100%; 
+  padding: 5px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+}
+
+/* Style for a group of buttons */
+.button-group {
+  display: flex; 
+  justify-content: space-between; 
+}
+
+/* Style for a cancel button */
+.button-cancel {
+  padding: 10px 15px; 
+  border: none; 
+  border-radius: 5px; 
+  background-color: #ccc; 
+  color: #333; 
+  cursor: pointer; 
+}
+
+/* Style for a submit button */
+.button-submit {
+  padding: 10px 15px; 
+  border: none; 
+  border-radius: 5px;
+  background-color: #007BFF; 
+  color: #fff; 
+  cursor: pointer; 
+}
+
+/* A button style that is used in recall chatbot*/
+#start-new {
+  width: 200px;
+  height: 71px;
+  border-radius: 15px;
+  border: 1px solid #EB4181;
+  background: #EB4181;
+  color: #ffffff; 
+  text-align: center; 
+  line-height: 71px; 
+  cursor: pointer;  
+  margin: 15px;
+  margin-top: 25px;
+  margin-right: 600px
+}

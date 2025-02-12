@@ -1,0 +1,124 @@
+html * {
+    font-family: Roboto;
+}
+
+body {
+    background-color: #F7E8EC;
+    margin: 0;
+    padding: 40px;
+    padding: 0 40px 40px; 
+}
+/* Header (heading + icons) */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Container of icons and palced to the right of page */
+.right-container {
+    display: flex;
+    align-items: center; 
+}
+/* Back to map */
+#back-button {
+    margin-right: 20px; 
+}
+/* Back to chatbot */
+a[href="./recall_cahtbot.html"] img {
+    margin-right: 20px;
+
+}
+/* Main body to put list of links */
+.container {
+    max-width: 1800px;
+    height: 650px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    font-size: 60px;
+    color: #D71A67
+}
+
+h2 {
+    color: #D71A67;
+    margin-top: 0;
+    
+}
+
+h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.subheading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    width: 98%;
+    margin: 0 auto;   
+}
+/* Back to previous page */
+#backButton {
+    padding: 10px 15px;
+    background-color: #EB4181;
+    border: 1px solid #EB4181;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 26px;
+    transition: background-color 0.3s;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+#backButton:hover {
+    background-color: #C6155E;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul li {
+    cursor: pointer;
+    background-color: #D71A67;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+ul li:hover {
+    background-color: #C6155E;
+    text-decoration: none;
+}
+
+

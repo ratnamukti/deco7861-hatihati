@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Strategies</title>
+    <link rel="stylesheet" href="./style/safety.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Safety Strategies</h1>
+        <div class="right-container">
+            <a href="crime_map.html">
+                <img src="./img/back-to-map.svg" id="back-button" alt="back-button">
+            </a>
+            <a href="./recall_cahtbot.html"><img src="./img/message.svg" alt="chatbot-toggle"></a>   
+        </div>     
+    </div>
+    <div class="container">
+        <div class="subheading">
+            <h2>Reporting Strange Behaviour</h2>
+            <button id="backButton">Go Back</button>
+        </div>
+        <ul>
+            <a href="https://www.qld.gov.au/law/crime-and-police/register-or-report-to-police/report-a-crime-or-disturbance/report-suspicious-activity" target="_blank"><li>Report Suspicious Activity </li></a>
+            <a href="https://www.police.qld.gov.au/policelink-reporting" target="_blank"><li>PoliceLink - Reporting</li></a>
+            <a href="https://www.nationalsecurity.gov.au/what-can-i-do/report-suspicious-behaviour" target="_blank"><li>Reporting Suspicious Behaviour</li></a>
+            <a href="https://www.police.sa.gov.au/your-safety/report-suspicious-activity" target="_blank"><li>Report Suspicious Behaviour</li></a>
+            <a href="https://www.figma.com/exit?url=https%3A%2F%2Fwww.crimestoppersqld.com.au%2Fmake-a-report%2F" target="_blank"><li>Crime Stoppers - Make A Report</li></a>
+            <a href="https://www.youtube.com/watch?v=-InmXZNAQWI&ab_channel=CrimestoppersUK" target="_blank"><li>Crime Stoppers - How you stay Anonymous on the Phone</li></a>
+            <a href="https://www.youtube.com/watch?v=Ztz_s_RzmOo&ab_channel=CityofBloomingtonMN" target="_blank"><li>How to Report Suspicious Activity</li></a>
+            <a href="https://dpss.umich.edu/content/services/report-a-crime/suspicious-behavior/" target="_blank"><li>Report a Crime or Concern Suspicious Behaviour </li></a>
+        </ul>
+    </div>
+    <script>
+        // Add an event listener to the element with the ID "backButton"
+        document.getElementById("backButton").addEventListener("click", function() {
+            // When the "backButton" is clicked, navigate back in the browser history
+            window.history.back();
+        });
+    </script>
+</body>
+</html>
